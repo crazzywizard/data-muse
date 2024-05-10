@@ -8,7 +8,7 @@ const ArtistTitle = ({ creator }: any) => (
   >
     <p>Top collectors for </p>
     <p className="pl-1 md:pl-3" tw="pl-3">
-      {` ${shortenAddress(creator)}`}:
+      {shortenAddress(creator)}:
     </p>
   </div>
 );
