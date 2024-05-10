@@ -31,7 +31,7 @@ const LeaderboardRow = ({ rank, name, text, image, isFrame }: any) => {
         </div>
       </td>
 
-      <td className="px-4 py-4 text-gray-500" tw="text-5xl pr-[100px] py-4">
+      <td className="px-4 py-4 text-gray-500" tw="text-5xl px-4 py-4">
         {text}
       </td>
     </tr>
