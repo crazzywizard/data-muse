@@ -20,6 +20,7 @@ const useLeaderboard = (creator: string) => {
         ]);
         const zoraFiltered = getLeaderboard(zoraData.response, USD);
         const merged = mergeLeaderboardData(zoraFiltered, soundData);
+        console.log('mergedData: ', merged);
         const sorted = getSortedLeaderboard(merged);
         const named = await getNames(sorted.splice(0, 100));
         setLeaderboard(named);

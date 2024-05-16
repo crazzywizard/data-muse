@@ -27,7 +27,7 @@ const mapAddressToProfile = (domains: any) => {
 
 const mapAddressToSocial = (socials: any) => {
   const addressToSocial: any = {};
-  socials.forEach((social: any) => {
+  socials?.forEach((social: any) => {
     social.userAssociatedAddresses.forEach((address: any) => {
       addressToSocial[address] = {
         profileName: social.profileName,
