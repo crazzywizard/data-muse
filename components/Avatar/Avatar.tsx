@@ -1,5 +1,5 @@
 const Avatar = ({
-  src = 'https://cloudflare-ipfs.com/ipfs/bafybeifbkoma4zfff5locnoxhgwpx2eehezcbctws32qsf3nsexmgtfboy',
+  src = 'https://nftstorage.link/ipfs/bafybeifbkoma4zfff5locnoxhgwpx2eehezcbctws32qsf3nsexmgtfboy',
   size = '32',
 }) => (
   <img
