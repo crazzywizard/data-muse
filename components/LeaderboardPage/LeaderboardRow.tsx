@@ -16,7 +16,7 @@ const LeaderboardRow = ({ rank, name, text, image, isFrame }: any) => {
       >
         {rank}
       </td>
-      <td className="flex">
+      <td className="flex" tw="flex">
         <div
           className="py-4 flex items-center gap-3"
           tw="text-5xl px-4 py-4 flex items-center gap-3"
