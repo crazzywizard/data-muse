@@ -15,6 +15,7 @@ export const getDataWithNamesAndAvatars = (rawData: any[], domains: any[], socia
 };
 
 const mapAddressToProfile = (domains: any) => {
+  if (!domains) return [];
   const addressToProfile: any = {};
   domains.forEach((domain: any) => {
     addressToProfile[domain.resolvedAddress] = {
@@ -26,6 +27,7 @@ const mapAddressToProfile = (domains: any) => {
 };
 
 const mapAddressToSocial = (socials: any) => {
+  if (!socials) return [];
   const addressToSocial: any = {};
   socials.forEach((social: any) => {
     social.userAssociatedAddresses.forEach((address: any) => {
