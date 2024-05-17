@@ -32,7 +32,7 @@ const LeaderboardRow = ({ rank, name, text, image, isFrame }: any) => {
       </td>
 
       <td className="px-4 py-4 text-gray-500" tw="text-5xl px-4 py-4">
-        ${text}
+        {text}
       </td>
     </tr>
   );
