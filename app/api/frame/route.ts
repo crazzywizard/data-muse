@@ -6,12 +6,12 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const getResponse = async (req: NextRequest): Promise<NextResponse> => {
   let buttonIndex = 1;
-  let creatorId
+  let creatorId;
   try {
     const body: FrameRequest = await req.json();
     const { untrustedData } = body;
-    const {url, inputText} = untrustedData
-    creatorId = await getCreatorId(inputText, url)
+    const { url, inputText } = untrustedData;
+    creatorId = await getCreatorId(inputText, url);
     buttonIndex = untrustedData.buttonIndex;
   } catch (error) {
     console.error('Error parsing JSON from request', error);
@@ -23,14 +23,14 @@ const getResponse = async (req: NextRequest): Promise<NextResponse> => {
       src: `${VERCEL_URL}/api/leaderboard?creator=${creatorId}`,
       aspectRatio: '1:1',
     },
-    input:{
+    input: {
       text: FRAME_INPUT_PLACEHOLDER,
     },
     postUrl: `${VERCEL_URL}/api/frame`,
   } as any;
 
   return new NextResponse(getFrameHtmlResponse(frame));
-}
+};
 
 export async function POST(req: NextRequest): Promise<Response> {
   return getResponse(req);

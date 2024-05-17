@@ -21,11 +21,11 @@ export const mapChainIdToClient = (chainId: number) => {
 export const mapChainIdToEndpoint = (chainId: number) => {
   switch (chainId) {
     case 1:
-      return `https://eth-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_KEY}`;
+      return `https://eth-mainnet.g.alchemy.com/v2/${process.env.NEXT_PUBLIC_ALCHEMY_KEY}`;
     case 10:
-      return `https://opt-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_KEY}`;
+      return `https://opt-mainnet.g.alchemy.com/v2/${process.env.NEXT_PUBLIC_ALCHEMY_KEY}`;
     case 8453:
-      return `https://base-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_KEY}`;
+      return `https://base-mainnet.g.alchemy.com/v2/${process.env.NEXT_PUBLIC_ALCHEMY_KEY}`;
     default:
       throw new Error(`Unsupported chainId: ${chainId}`);
   }
