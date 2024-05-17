@@ -26,7 +26,7 @@ const LeaderboardHead = () => (
       </th>
       <th
         className="py-3 pr-5 text-left tracking-wider"
-        tw="px-4 py-3 text-left font-medium tracking-wider"
+        tw="py-3 text-right font-medium tracking-wider w-[390px] flex justify-end"
       >
         editions
       </th>

@@ -26,7 +26,7 @@ const LeaderboardRow = ({ rank, name, text, image, isFrame }: any) => {
           <div tw="px-4 py-4">{shortenAddress(name)}</div>
         </div>
       </td>
-      <td className="px-4 py-4 text-gray-500" tw="text-5xl px-4 py-4 flex items-center">
+      <td className="px-4 py-4 text-gray-500" tw="text-5xl pl-[210px] py-4 flex items-center">
         {text}
       </td>
     </tr>
