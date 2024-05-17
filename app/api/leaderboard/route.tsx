@@ -53,7 +53,7 @@ export async function GET(req: NextRequest) {
         style={{
           display: 'flex',
           backgroundImage:
-            'url("https://cloudflare-ipfs.com/ipfs/bafybeiboye2kdtyziefq35p44z3sikceuehlvqn772k3h63sn6riwbbbku")',
+            'url("https://nftstorage.link/ipfs/bafybeiboye2kdtyziefq35p44z3sikceuehlvqn772k3h63sn6riwbbbku")',
           backgroundSize: '100% 100%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
