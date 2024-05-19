@@ -64,7 +64,7 @@ export async function GET(req: NextRequest) {
         tw="flex flex-col px-3"
       >
         <ArtistTitle creator={creator} />
-        <Leaderboard leaderboard={filtered.slice(0, 5)} />
+        <Leaderboard leaderboard={filtered.slice(0, 5)} isFrame />
         <FrameFooter />
       </div>
     ),

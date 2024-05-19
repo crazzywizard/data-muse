@@ -26,7 +26,7 @@ export async function GET(req: NextRequest) {
           color: 'black',
           background: 'white',
           backgroundImage:
-            'url("https://nftstorage.link/ipfs/bafybeiboye2kdtyziefq35p44z3sikceuehlvqn772k3h63sn6riwbbbku")',
+            'url("https://cloudflare-ipfs.com/ipfs/bafybeiboye2kdtyziefq35p44z3sikceuehlvqn772k3h63sn6riwbbbku")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           width: '100%',

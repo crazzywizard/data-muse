@@ -9,8 +9,8 @@ const Avatar = ({
     width={size}
     src={src}
     style={{
-      aspectRatio: '32/32',
       objectFit: 'cover',
+      borderRadius: '50%',
     }}
   />
 );
