@@ -12,17 +12,17 @@ const SearchBar = () => {
   return (
     <div className="font-helvetica flex gap-3">
       <input
-        className="rounded h-[34px] md:h-[56px] w-[250px] md:w-[656px] text-[24px] md:text-[36px] pl-3 
+        className="rounded h-[34px] md:h-[56px] w-[250px] md:w-[656px] text-[24px] md:text-[36px] pl-10 
         outline-none shadow-gray_shadow"
         placeholder="search a wallet..."
         value={creator}
         onChange={(e) => setCreator(e.target.value)}
       />
       <Button
-        className="bg-white !text-black px-2 md:px-4 shadow-gray_shadow !text-[32px] !font-bold"
+        className="bg-white !text-black px-2 md:px-4 shadow-gray_shadow !text-[32px]"
         onClick={handleClick}
       >
-        <p className="hidden md:block">Search</p>
+        <p className="hidden md:block !font-[700]">search</p>
         <img height="20" width="20" src="/images/search.png" className="block md:hidden" />
       </Button>
     </div>
