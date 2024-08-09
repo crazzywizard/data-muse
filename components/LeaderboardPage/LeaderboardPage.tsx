@@ -6,7 +6,7 @@ import ArtistTitle from '../ArtistTitle';
 import { useEffect, useState } from 'react';
 import { getProfileInfo } from '@/lib/getProfileInfo';
 import ShareButton from '../ShareButton';
-import SearchBar from '../SearchBar';
+import SearchBar from './SearchBar';
 import Profile from '../Profile';
 
 const LeaderboardPage = ({ creator }: any) => {
