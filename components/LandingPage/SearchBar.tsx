@@ -15,6 +15,8 @@ const SearchBar = () => {
         className="rounded h-[34px] md:h-[56px] w-[250px] md:w-[656px] text-[24px] md:text-[36px] pl-3 
         outline-none shadow-gray_shadow"
         placeholder="search a wallet..."
+        value={creator}
+        onChange={(e) => setCreator(e.target.value)}
       />
       <Button
         className="bg-white !text-black px-2 md:px-4 shadow-gray_shadow !text-[32px] !font-bold"
