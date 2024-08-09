@@ -12,7 +12,7 @@ const SearchBar = () => {
   return (
     <div className="font-helvetica flex gap-3">
       <input
-        className="rounded h-[34px] md:h-[56px] w-[250px] md:w-[656px] text-[24px] md:text-[36px] pl-10 
+        className="rounded h-[34px] md:h-[56px] w-[200px] md:w-[520px] text-[24px] md:text-[36px] pl-4 md:pl-10 
         outline-none shadow-gray_shadow"
         placeholder="search a wallet..."
         value={creator}

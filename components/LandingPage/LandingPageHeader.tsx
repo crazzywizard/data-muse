@@ -10,7 +10,7 @@ const LandingPageHeader = () => {
         tw="text-[40px] font-black pt-[100px]"
         style={{ display: 'flex' }}
       >
-        <span className="hidden md:block">search a wallet →</span>view most loyal collectors
+        <span className="hidden md:block">search a wallet →</span>view top collectors
       </div>
     </div>
   );
