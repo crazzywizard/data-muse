@@ -1,22 +1,19 @@
-const LandingPageHeader = ({ isServer }: any) => (
-  <div
-    style={{ display: 'flex' }}
-    className="space-y-3 flex flex-col"
-    tw="flex flex-col items-center text-center w-[1000px]"
-  >
-    <p
-      className="text-4xl font-bold tracking-tighter sm:text-5xl"
-      tw="text-7xl font-black pt-[100px]"
+const LandingPageHeader = () => {
+  return (
+    <div
+      style={{ display: 'flex' }}
+      className="space-y-3 flex flex-col"
+      tw="flex flex-col items-center text-center w-[1000px]"
     >
-      Know Your Community.
-    </p>
-    <p
-      className="max-w-[600px] text-md md:text-xl font-bold"
-      tw="max-w-[600px] text-4xl font-bold mt-[-25]"
-    >
-      {!isServer && `Log in to`} view your most loyal collectors
-    </p>
-  </div>
-);
+      <div
+        className="flex gap-2 font-bold tracking-tighter text-[24px] md:text-[40px]"
+        tw="text-[40px] font-black pt-[100px]"
+        style={{ display: 'flex' }}
+      >
+        <span className="hidden md:block">search a wallet →</span>view most loyal collectors
+      </div>
+    </div>
+  );
+};
 
 export default LandingPageHeader;

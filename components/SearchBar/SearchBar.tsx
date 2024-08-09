@@ -1,26 +1,17 @@
 import Button from '../Button';
-import { useState } from 'react';
-import { VERCEL_URL } from '@/lib/consts';
 
-const SearchBar = () => {
-  const [creator, setCreator] = useState('');
-
-  const handleClick = () => {
-    window.open(`${VERCEL_URL}/creator/${creator}`);
-  };
-
-  return (
-    <div className="font-helvetica flex gap-3">
-      <input
-        onChange={(e) => setCreator(e.target.value)}
-        className="rounded h-[30px] w-[200px] md:w-[300px] pl-3"
-        placeholder="search wallet address..."
-      />
-      <Button onClick={handleClick} className="bg-white !text-black w-[29px] !shadow-2xl">
-        <img height="20" width="20" src="/images/search.png" />
-      </Button>
-    </div>
-  );
-};
+const SearchBar = () => (
+  <div className="font-helvetica flex gap-3">
+    <input
+      className="rounded h-[34px] md:h-[56px] w-[250px] md:w-[656px] text-[24px] md:text-[36px] pl-3 
+      outline-none shadow-gray_shadow"
+      placeholder="search a wallet..."
+    />
+    <Button className="bg-white !text-black px-2 md:px-4 shadow-gray_shadow !text-[32px] !font-bold">
+      <p className="hidden md:block">Search</p>
+      <img height="20" width="20" src="/images/search.png" className="block md:hidden" />
+    </Button>
+  </div>
+);
 
 export default SearchBar;
