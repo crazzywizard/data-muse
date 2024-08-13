@@ -2,15 +2,9 @@ import { FRAME_INPUT_PLACEHOLDER, VERCEL_URL } from '@/lib/consts';
 import LeaderboardPage from '@/components/LeaderboardPage/LeaderboardPage';
 import { FrameMetadata } from '@coinbase/onchainkit';
 import getButtons from '@/lib/getButtons';
-import { isAddress } from 'viem';
-import { ethPublicClient } from '@/lib/publicClient';
+import { getProperAddress } from '@/lib/getProperAdress';
 
 const Page = async ({ params }: { params: { creatorId: string } }) => {
-  const getProperAddress = async (creator: string) => {
-    return !isAddress(creator)
-      ? await ethPublicClient.getEnsAddress({ name: creator })
-      : params.creatorId;
-  };
   return (
     <div>
       <FrameMetadata
