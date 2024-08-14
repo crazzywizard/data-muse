@@ -1,7 +1,7 @@
 import ArtistTitle from '@/components/ArtistTitle';
 import FrameFooter from '@/components/FrameFooter';
 import Leaderboard from '@/components/Leaderboard';
-import getEnsName from '@/lib/getEnsName';
+import { getEnsName } from '@/lib/getEnsName';
 import getEthPrice from '@/lib/getEthPrice';
 import getAllIndexedData from '@/lib/getIndexedData';
 import getLeaderboard from '@/lib/getLeaderboard';

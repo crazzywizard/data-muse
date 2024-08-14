@@ -1,5 +1,6 @@
 import Button from '@/components/Button';
 import { VERCEL_URL } from '@/lib/consts';
+import { getEthAddressFromAirstack } from '@/lib/getEnsName';
 import { ethPublicClient } from '@/lib/publicClient';
 import { useEffect, useState } from 'react';
 import { isAddress } from 'viem';
@@ -11,7 +12,9 @@ const SearchBar = () => {
   const handleInputChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     setCreator(e.target.value);
     if (!isAddress(e.target.value)) {
-      const address = await ethPublicClient.getEnsAddress({ name: e.target.value });
+      if (e.target.value.length < 3) return;
+      if (!e.target.value.endsWith('.eth')) return;
+      const address = await getEthAddressFromAirstack(e.target.value);
       if (address && isAddress(address)) {
         setCreator(address);
       }
