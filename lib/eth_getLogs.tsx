@@ -1,3 +1,4 @@
+import { PublicClient } from 'viem';
 export const getLogs = async (
   contractAddress: String[],
   topics: Array<String>,
