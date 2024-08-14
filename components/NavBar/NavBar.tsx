@@ -1,5 +1,5 @@
 import { useRouter } from 'next/navigation';
-import SearchBar from '../SearchBar';
+import SearchBar from '../LeaderboardPage/SearchBar';
 
 const NavBar = () => {
   const { push } = useRouter();

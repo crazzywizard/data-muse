@@ -1,4 +1,4 @@
-import Button from '../Button';
+import Button from '@/components/Button';
 import { useState } from 'react';
 import { VERCEL_URL } from '@/lib/consts';
 

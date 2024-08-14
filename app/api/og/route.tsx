@@ -37,7 +37,7 @@ export async function GET(req: NextRequest) {
         }}
         tw="flex gap-3"
       >
-        <LandingPageHeader isServer />
+        <LandingPageHeader />
       </div>
     ),
     {

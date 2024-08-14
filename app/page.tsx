@@ -18,10 +18,6 @@ export const metadata: Metadata = {
   },
 };
 
-const Page = () => (
-  <>
-    <LandingPage />
-  </>
-);
+const Page = () => <LandingPage />;
 
 export default Page;

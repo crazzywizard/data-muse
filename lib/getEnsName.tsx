@@ -8,4 +8,11 @@ const getEnsName = async (address: string) => {
   return ensName;
 };
 
+export const getEnsAddress = async (name: string) => {
+  const ensAddress = await ethPublicClient.getEnsAddress({
+    name: normalize(name) as any,
+  });
+  return ensAddress;
+};
+
 export default getEnsName;
