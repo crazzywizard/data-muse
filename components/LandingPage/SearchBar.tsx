@@ -23,23 +23,25 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="flex gap-3 font-helvetica">
-      <input
-        className="rounded h-[34px] md:h-[56px] w-[200px] md:w-[520px] text-[24px] md:text-[36px] pl-4 md:pl-10 
+    <form onSubmit={handleClick}>
+      <div className="flex gap-3 font-helvetica">
+        <input
+          className="rounded h-[34px] md:h-[56px] w-[200px] md:w-[520px] text-[24px] md:text-[36px] pl-4 md:pl-10 
         outline-none shadow-gray_shadow"
-        placeholder="search a wallet..."
-        value={creator}
-        onChange={handleInputChange}
-      />
-      <Button
-        className="bg-white !text-black px-2 md:px-4 shadow-gray_shadow !text-[32px]"
-        onClick={handleClick}
-        type="submit"
-      >
-        <p className="hidden md:block !font-[700]">search</p>
-        <img height="20" width="20" src="/images/search.png" className="block md:hidden" />
-      </Button>
-    </div>
+          placeholder="search a wallet..."
+          value={creator}
+          onChange={handleInputChange}
+        />
+        <Button
+          className="bg-white !text-black px-2 md:px-4 shadow-gray_shadow !text-[32px]"
+          onClick={handleClick}
+          type="submit"
+        >
+          <p className="hidden md:block !font-[700]">search</p>
+          <img height="20" width="20" src="/images/search.png" className="block md:hidden" />
+        </Button>
+      </div>
+    </form>
   );
 };
 
