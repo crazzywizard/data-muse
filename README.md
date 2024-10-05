@@ -46,10 +46,17 @@ Have fun! ⛵️
 
 <br />
 
+## UX Designs
+
+You can view the designs in our [Figma file](https://www.figma.com/design/YdjkO0pzvL0XIRImMr2cJn/data-muse-experimentation?node-id=0-1&t=0pX7TkIAFgHXDtMS-1).
+
+<br />
+
 ## Authors
 
 - [@sweetmantech](https://github.com/sweetmantech) ([warpcast](https://warpcast.com/sweetman-eth))
 - [@crazzywizard](https://github.com/crazzywizard) ([warpcast](https://warpcast.com/crazzywizard))
+- [@pasteleth](https://github.com/pasteleth) ([warpcast])(https://warpcast.com/leopastel))
 
 ## License
 
